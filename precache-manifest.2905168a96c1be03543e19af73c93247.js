@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/chathub/static/media/app-logo.ea931a5b.svg"
   },
   {
-    "revision": "3dfca64a9bbc6b7be434",
-    "url": "/chathub/static/css/main.db5c8045.chunk.css"
+    "revision": "26869d9f264eb88eb585",
+    "url": "/chathub/static/css/main.8222216b.chunk.css"
   },
   {
-    "revision": "3a240587f9a73ba192cb822a0a39f233",
-    "url": "/chathub/static/media/Flaticon.3a240587.eot"
+    "revision": "47842220faff678f6af537ac3eb9b169",
+    "url": "/chathub/static/media/Flaticon.47842220.svg"
   },
   {
-    "revision": "4249c8e74424f2f2a133",
-    "url": "/chathub/static/js/1.4249c8e7.chunk.js"
+    "revision": "8eff59caace66986cfd4",
+    "url": "/chathub/static/js/1.8eff59ca.chunk.js"
   },
   {
     "revision": "2eb26c5e8ffd4612bdd6",
@@ -24,8 +24,12 @@ self.__precacheManifest = [
     "url": "/chathub/static/media/avatar.1ee966d6.png"
   },
   {
-    "revision": "3dfca64a9bbc6b7be434",
-    "url": "/chathub/static/js/main.3dfca64a.chunk.js"
+    "revision": "26869d9f264eb88eb585",
+    "url": "/chathub/static/js/main.26869d9f.chunk.js"
+  },
+  {
+    "revision": "3a240587f9a73ba192cb822a0a39f233",
+    "url": "/chathub/static/media/Flaticon.3a240587.eot"
   },
   {
     "revision": "bbb2e063e7177c4eacb60163a39c25fc",
@@ -36,15 +40,11 @@ self.__precacheManifest = [
     "url": "/chathub/static/media/Flaticon.85c8dfb0.ttf"
   },
   {
-    "revision": "47842220faff678f6af537ac3eb9b169",
-    "url": "/chathub/static/media/Flaticon.47842220.svg"
+    "revision": "8eff59caace66986cfd4",
+    "url": "/chathub/static/css/1.f2eb2321.chunk.css"
   },
   {
-    "revision": "4249c8e74424f2f2a133",
-    "url": "/chathub/static/css/1.aa3a694b.chunk.css"
-  },
-  {
-    "revision": "fa250709c5159f3c3e02d5319b7bf0ca",
+    "revision": "a60b7f6a1d4fb7064d3ac3b59bbe2285",
     "url": "/chathub/index.html"
   }
 ];
