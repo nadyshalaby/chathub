@@ -1,0 +1,46 @@
+{
+  "name": "runner",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://taekunger.github.io/chathub/",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.7",
+    "@fortawesome/free-brands-svg-icons": "^5.5.0",
+    "@fortawesome/free-solid-svg-icons": "^5.4.2",
+    "@fortawesome/react-fontawesome": "^0.1.3",
+    "bootstrap": "4.1.3",
+    "gh-pages": "^2.0.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-app-polyfill": "^0.1.3",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^16.5.2",
+    "react-grid-gallery": "^0.5.3",
+    "react-redux": "5.1.0",
+    "react-scripts": "2.0.3",
+    "redux": "4.0.1",
+    "redux-saga": "0.16.2"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/taekunger/redux-react-saga-chat-app-tutorial.git",
+  "license": "MIT"
+}
