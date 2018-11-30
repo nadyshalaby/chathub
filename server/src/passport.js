@@ -1,8 +1,8 @@
-import passport from "passport";
-import { Strategy as JwtStrategy, ExtractJwt } from "passport-jwt";
-import { Strategy as LocalStrategy } from "passport-local";
-import bcrypt from "bcrypt";
-import { User } from "./models";
+import passport from 'passport';
+import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt';
+import { Strategy as LocalStrategy } from 'passport-local';
+import bcrypt from 'bcrypt';
+import { User } from './models';
 
 const opts = {};
 
@@ -14,7 +14,7 @@ passport.use(
       if (user) {
         return done(null, user);
       }
-      return done("User not found.", false);
+      return done('User not found.', false);
     });
   })
 );
@@ -25,17 +25,18 @@ passport.use(
 passport.use(
   new LocalStrategy(
     {
-      usernameField: "email",
-      passwordField: "password",
-      session: false
+      usernameField: 'email',
+      passwordField: 'password',
+      session: false,
     },
     (email, password, done) => {
+      console.log(email, password);
       User.findOne({ where: { email } }).then(user => {
-        if (!user) return done("User not found", false);
+        if (!user) return done('User not found', false);
         if (bcrypt.compareSync(password, user.password)) {
           return done(null, user);
         }
-        return done("Your credentials is incorrect");
+        return done('Your credentials is incorrect', false);
       });
     }
   )

@@ -1,13 +1,10 @@
 import React from "react";
-import Chat from "./Chat";
+import Routes from "./Routes";
+import { store } from "../store";
 import { Provider } from "react-redux";
-import store from "../store";
 
-
-const App = () => (
+export default () => (
   <Provider store={store}>
-    <Chat />
+    <Routes />
   </Provider>
 );
-
-export default App;
