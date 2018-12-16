@@ -3,7 +3,7 @@ import { AUTH_LOGIN_REQUEST } from "./../../constants";
 import { connect } from "react-redux";
 import { withAlert } from "react-alert";
 
-class Auth extends Component {
+class Signin extends Component {
   state = {
     email: "",
     password: ""
@@ -38,7 +38,7 @@ class Auth extends Component {
                 type="email"
                 className="form-control"
                 placeholder="Email"
-                value={this.state.email}
+                value={this.state.email || this.props.email}
                 ref={email => (this.email = email)}
                 onChange={this.handleEmail}
               />
@@ -68,7 +68,8 @@ class Auth extends Component {
   }
 }
 const mapStateToProps = state => ({
-  loading: state.auth.loading
+  loading: state.auth.loading,
+  email: state.auth.email
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -78,4 +79,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(withAlert(Auth));
+)(withAlert(Signin));

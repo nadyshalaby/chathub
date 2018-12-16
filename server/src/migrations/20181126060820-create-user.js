@@ -22,6 +22,14 @@ module.exports = {
         allowNull: false,
         type: Sequelize.STRING
       },
+      securityQuestion: {
+        allowNull: false,
+        type: Sequelize.STRING
+      },
+      answer: {
+        allowNull: false,
+        type: Sequelize.STRING
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

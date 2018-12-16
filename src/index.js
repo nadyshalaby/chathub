@@ -10,4 +10,8 @@ import "./index.css";
 import "./fonts/flaticon.css";
 import App from "./components";
 
+$(function() {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
 ReactDOM.render(<App />, document.getElementById("root"));
