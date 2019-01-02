@@ -65,6 +65,9 @@ authRouter.post(
         password: await bcrypt.hash(req.body.password, 10)
       }).then(user => {
         const { password, ...payload } = user.get({ plain: true });
+
+        // send confirmation email to created user
+        req.ioc.cradle.cannedMailer.sendEmailConfirmation(user);
         res.json({
           success: true,
           payload

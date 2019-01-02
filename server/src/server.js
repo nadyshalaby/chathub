@@ -6,6 +6,7 @@ import morgan from "morgan";
 import "./init";
 import passport from "./passport";
 import routes from "./routes";
+import middlewares from "./middlewares";
 
 const app = express();
 const port = process.env.PORT;
@@ -19,6 +20,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(expressValidator());
 app.use(passport.initialize());
+app.use(middlewares);
 app.use(routes);
 
 // testing express server

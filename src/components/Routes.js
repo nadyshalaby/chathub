@@ -10,9 +10,11 @@ import { ConnectedRouter as Router } from "connected-react-router";
 import { Switch } from "react-router-dom";
 import { connect } from "react-redux";
 import { UPDATE_AUTH_DETAILS, CHATHUB_AUTH_DETAILS } from "../constants";
+import ResetPassword from "./auth/ResetPassword";
+import ChangePassword from "./auth/ChangePassword";
 
 class Routes extends React.Component {
-  // optional cofiguration
+  // optional configuration
   options = {
     position: "top center",
     timeout: 5000,
@@ -33,7 +35,9 @@ class Routes extends React.Component {
         <Alert template={AlertTemplate} {...this.options}>
           <Switch>
             <Authenticated path="/" exact component={Chat} />
-            <Guest path="/auth" component={Auth} />
+            <Guest path="/auth" exact component={Auth} />
+            <Guest path="/auth/reset-password" component={ResetPassword} />
+            <Guest path="/auth/change-password" component={ChangePassword} />
           </Switch>
         </Alert>
       </Router>

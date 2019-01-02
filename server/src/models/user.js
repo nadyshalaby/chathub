@@ -5,7 +5,8 @@ module.exports = (sequelize, DataTypes) => {
     email: { type: DataTypes.STRING, unique: true },
     password: DataTypes.STRING,
     securityQuestion: DataTypes.STRING,
-    answer: DataTypes.STRING
+    answer: DataTypes.STRING,
+    isVerified: DataTypes.BOOLEAN
   });
 
   return User;

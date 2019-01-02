@@ -15,7 +15,7 @@ const getWindowHeight = () => ({
 const createAxiosInstance = () =>
   axios.create({
     baseURL: "http://localhost:8000/",
-    timeout: 1000,
+    timeout: 3000,
     headers: {}
   });
 

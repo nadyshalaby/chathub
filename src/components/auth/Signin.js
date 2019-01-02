@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { AUTH_LOGIN_REQUEST } from "./../../constants";
 import { connect } from "react-redux";
 import { withAlert } from "react-alert";
+import { Link } from "react-router-dom";
 
 class Signin extends Component {
   state = {
@@ -43,6 +44,9 @@ class Signin extends Component {
                 onChange={this.handleEmail}
               />
             </div>
+            <Link to="/auth/reset-password" className="text-secondary">
+              <small>Forgot your password?</small>
+            </Link>
           </div>
           <div className="col">
             <div className="form-group">

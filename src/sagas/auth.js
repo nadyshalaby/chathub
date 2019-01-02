@@ -109,7 +109,9 @@ function* workerAuthSignup(action) {
       });
 
       // alert the user with successful login
-      alert.success("Your account created successfully, Now you can login.");
+      alert.success(
+        "Your account created successfully; We send you a confirmation email to verify your account."
+      );
     } else {
       // if something goes wrong
       const errors = {};
